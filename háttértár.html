@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szamolo</title>
+    <script src="a.js"></script>
+</head>
+<body>
+    <div>
+        <label>Adatmennyiség</label>
+        <input type="number" name="adatMennyiseg" id="IDadatMennyiseg">
+        <select name="adatMennyisegSelect" id="IDadatMennyisegSelect">
+            <option value="KB">KB</option>
+            <option value="MB">MB</option>
+            <option value="GB">GB</option>
+            <option value="TB">TB</option>
+          </select>
+          <br>
+          <label for="atviteliSebesseg">Sebesség</label>
+    <input type="range" value="0" min="10" max="5000"name="sebesseg" id="IDsebesseg" 
+      onchange="SebessegValtozas()">
+    <span id="sebessegErtek"></span>
+    <select name="sebessegSelect" id="IDsebessegSelect">
+      <option value="KB/s">KB/s</option>
+      <option value="MB/s">MB/s</option>
+      <option value="GB/s">GB/s</option>
+    </select>
+    <br>
+    <span>Átviteli idő:</span>
+    <span id="IDeredmeny"></span>
+    <br>
+    <button onclick="EredmenySzamitas()">Számítás</button>
+    </div> 
+</body>
+</html>
